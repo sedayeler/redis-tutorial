@@ -25,7 +25,7 @@ namespace InMemory.Caching.Controllers
         public string GetName()
         {
             return _memoryCache.Get<string>("name");
-        }
+            }
 
         [HttpGet("set-date")]
         public void SetDate()
