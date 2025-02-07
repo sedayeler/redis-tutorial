@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemory.Caching", "InMemory.Caching\InMemory.Caching.csproj", "{C6AF3211-64C9-40FD-BA4F-C01D418CFAF0}"
 EndProject
@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distributed.Caching", "Distributed.Caching\Distributed.Caching.csproj", "{950C43A6-82C2-4F4D-AE57-35C28A4BFE5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.Pub.Sub.Publisher", "Redis.Pub.Sub.Publisher\Redis.Pub.Sub.Publisher.csproj", "{8742746D-0BF0-4054-8CDC-8EAF18688864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.Pub.Sub.Subscriber", "Redis.Pub.Sub.Subscriber\Redis.Pub.Sub.Subscriber.csproj", "{9F548FF4-9CCB-46FA-BAC2-A5FFE132B3E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +30,14 @@ Global
 		{950C43A6-82C2-4F4D-AE57-35C28A4BFE5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{950C43A6-82C2-4F4D-AE57-35C28A4BFE5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{950C43A6-82C2-4F4D-AE57-35C28A4BFE5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8742746D-0BF0-4054-8CDC-8EAF18688864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8742746D-0BF0-4054-8CDC-8EAF18688864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8742746D-0BF0-4054-8CDC-8EAF18688864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8742746D-0BF0-4054-8CDC-8EAF18688864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F548FF4-9CCB-46FA-BAC2-A5FFE132B3E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F548FF4-9CCB-46FA-BAC2-A5FFE132B3E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F548FF4-9CCB-46FA-BAC2-A5FFE132B3E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F548FF4-9CCB-46FA-BAC2-A5FFE132B3E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

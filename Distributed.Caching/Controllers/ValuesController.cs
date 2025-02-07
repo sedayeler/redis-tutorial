@@ -24,11 +24,13 @@ namespace Distributed.Caching.Controllers
                 AbsoluteExpiration = DateTimeOffset.UtcNow.AddSeconds(30),
                 SlidingExpiration = TimeSpan.FromSeconds(5)
             });
+
             await _distributedCache.SetAsync("surname", Encoding.UTF8.GetBytes(surname), options: new()
             {
                 AbsoluteExpiration = DateTimeOffset.UtcNow.AddSeconds(30),
                 SlidingExpiration = TimeSpan.FromSeconds(5)
             });
+
             return Ok();
         }
 
@@ -36,8 +38,10 @@ namespace Distributed.Caching.Controllers
         public async Task<IActionResult> Get()
         {
             string name = await _distributedCache.GetStringAsync("name");
+
             byte[] surnameByte = await _distributedCache.GetAsync("surname");
             string surname = Encoding.UTF8.GetString(surnameByte);
+
             return Ok(new
             {
                 name,
